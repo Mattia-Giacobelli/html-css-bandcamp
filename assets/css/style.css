@@ -1,0 +1,76 @@
+/*Debug*/
+
+.debug {
+
+    header{
+
+        .menu{
+            background-color: gray;
+        }
+
+        .menu div {
+            background-color: orange;
+            padding: 10px;
+        }
+
+        input{
+            background-color: purple;
+        }
+
+        li{
+            background-color: green;
+        }
+
+        .genre {
+            background-color: lightgray;
+        }
+    }
+}
+
+
+/*Generics*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/*Utilities*/
+
+.d-flex {
+    display: flex;
+}
+
+
+
+
+/*Header*/
+
+.menu{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+    img {
+        padding-right: 0.5rem;
+    }
+    
+    .left-menu{
+        align-items: center;
+    }
+
+    ul{
+        gap: 1rem;
+    }
+}
+
+.genre{
+    padding: 0.5rem 1rem;
+}
