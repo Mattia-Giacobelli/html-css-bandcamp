@@ -111,6 +111,41 @@ input {
     color: var(--searchbar-text);
 }
 
+.discover {
+
+    h2{
+        color: white;
+    }
+
+    span{
+        color: var(--searchbar-text);
+        font-size: 1.3rem;
+    }
+}
+
+/*Grid Utilities*/
+
+.col-left {
+    width: 100%;
+}
+
+.row {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.album-col {
+    width: 45%;
+    margin-bottom: 2rem;
+
+}
+
+.col-right {
+    width: 30%;
+    display: none;
+}
+
+
 /*Header*/
 
 .menu {
@@ -168,25 +203,5 @@ main {
 }
 
 .discover {
-
-    .col-left {
-        width: 100%;
-    }
-
-    .row {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .album-col {
-        width: 45%;
-        margin-bottom: 1rem;
-
-    }
-
-    .col-right {
-        display: none;
-    }
-
 
 }
