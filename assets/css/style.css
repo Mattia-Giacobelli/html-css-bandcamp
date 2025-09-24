@@ -2,9 +2,9 @@
 
 .debug {
 
-    header{
+    header {
 
-        .menu{
+        .menu {
             background-color: gray;
         }
 
@@ -13,16 +13,36 @@
             padding: 10px;
         }
 
-        input{
+        input {
             background-color: purple;
         }
 
-        li{
+        li {
             background-color: green;
         }
 
         .genre {
             background-color: lightgray;
+        }
+    }
+
+    main {
+
+        background-color: red;
+
+        .col-left {
+            background-color: blue;
+            min-height: 600px;
+        }
+
+        .col-right {
+            background-color: aqua;
+            min-height: 600px;
+        }
+
+        .album-col {
+            background-color: firebrick;
+            min-height: 150px;
         }
     }
 }
@@ -48,12 +68,15 @@ img {
     display: flex;
 }
 
-
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
 
 
 /*Header*/
 
-.menu{
+.menu {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
@@ -61,16 +84,42 @@ img {
     img {
         padding-right: 0.5rem;
     }
-    
-    .left-menu{
+
+    .left-menu {
         align-items: center;
     }
 
-    ul{
+    ul {
         gap: 1rem;
     }
 }
 
-.genre{
+.genre {
     padding: 0.5rem 1rem;
+}
+
+/*Main*/
+
+.discover {
+
+    .col-left {
+        width: 100%;
+    }
+
+    .row{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .album-col {
+        width: 45%;
+        margin-bottom: 1rem;
+        
+    }
+
+    .col-right {
+        display: none;
+    }
+
+
 }
