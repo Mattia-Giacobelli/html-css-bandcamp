@@ -145,7 +145,7 @@ input {
 
 .row {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .album-col {
@@ -236,7 +236,7 @@ main {
     align-items: flex-start;
 }
 
-.row{
+.row {
     height: 800px;
     overflow-y: scroll;
 }
@@ -290,10 +290,12 @@ main {
 }
 
 .col-right {
+    padding-top: 1.5rem;
     color: white;
 
-    .img-margin {
+    .img-album {
         margin-bottom: 3rem;
+        border: 2px solid var(--bcg-secondary);
     }
 
     .current-album {
@@ -328,7 +330,7 @@ main {
     .artist {
         align-items: center;
 
-        img{
+        img {
             border-radius: 50%;
         }
 
@@ -341,8 +343,23 @@ main {
     .follow {
         flex-direction: column;
 
-        .flw-btn{
+        .flw-btn {
             margin-top: 1rem;
         }
+    }
+
+    .play-button:hover,
+    .album:hover {
+        opacity: 0.9;
+
+    }
+
+    .wishlist:hover,
+    .flw-btn:hover {
+        background-color: #464646;
+    }
+
+    .btn:hover {
+        text-decoration: underline;
     }
 }
