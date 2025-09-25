@@ -49,11 +49,6 @@
 
     .discover {
 
-        .row {
-            min-height: 800px;
-            overflow-y: visible;
-        }
-
         .album-col {
             width: 23%;
         }
