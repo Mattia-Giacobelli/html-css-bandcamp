@@ -315,6 +315,10 @@ main {
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+
+        .go-to-album{
+            color: white;
+        }
     }
 
     .current-playing {
@@ -358,6 +362,10 @@ main {
     .album:hover {
         opacity: 0.9;
 
+    }
+
+    .go-to-album:hover{
+        text-decoration: underline;
     }
 
     .wishlist:hover,
