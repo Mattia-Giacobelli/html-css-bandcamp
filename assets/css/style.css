@@ -69,15 +69,7 @@ img {
 }
 
 
-
 /*Utilities*/
-
-/*Flex*/
-
-.d-flex {
-    display: flex;
-}
-
 
 .container {
     width: 95%;
@@ -119,6 +111,12 @@ input {
     background-color: var(--bcg-primary);
     border-radius: 50%;
     padding: 0.8rem;
+}
+
+/*Flex*/
+
+.d-flex {
+    display: flex;
 }
 
 /*Buttons*/
@@ -165,6 +163,8 @@ input {
 
 /*Header*/
 
+/*Header menu*/
+
 .menu {
     background-color: var(--bcg-primary);
     justify-content: space-between;
@@ -206,6 +206,8 @@ input {
     }
 }
 
+/*Header Genre*/
+
 .genre {
     background-color: var(--bcg-secondary);
     padding: 0.5rem 1rem;
@@ -240,6 +242,8 @@ main {
     height: 800px;
     overflow-y: scroll;
 }
+
+/*Albums grid*/
 
 .col-left {
     padding-top: 1.5rem;
@@ -288,6 +292,8 @@ main {
     }
 
 }
+
+/*Current playing*/
 
 .col-right {
     padding-top: 1.5rem;

@@ -29,7 +29,7 @@
 
     .discover {
 
-        .col-left{
+        .col-left {
             width: 65%;
         }
 
@@ -43,4 +43,30 @@
 
 /*Desktop*/
 
-@media screen and (min-width:1281px) {}
+@media screen and (min-width:1281px) {
+
+    /*Main*/
+
+    .discover {
+
+        .row {
+            min-height: 800px;
+            overflow-y: visible;
+        }
+
+        .album-col {
+            width: 23%;
+        }
+
+        .col-left {
+
+            h4 {
+                font-size: 1.3rem;
+            }
+
+            .tag {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
