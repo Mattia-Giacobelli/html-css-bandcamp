@@ -1,0 +1,46 @@
+/*MEDIA QUERY*/
+
+/*Mobile*/
+
+@media screen and (max-width:600px) {}
+
+/*Tablet*/
+
+@media screen and (min-width:744px) {
+
+    /*Header*/
+
+    .menu {
+
+        .big-logo {
+            display: inline-block;
+        }
+
+        .small-logo {
+            display: none;
+        }
+
+        .searchbar {
+            display: inline;
+        }
+    }
+
+    /*Main*/
+
+    .discover {
+
+        .col-left{
+            width: 65%;
+        }
+
+        .col-right {
+            display: block;
+
+        }
+    }
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width:1281px) {}

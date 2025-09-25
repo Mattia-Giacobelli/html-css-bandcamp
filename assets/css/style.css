@@ -136,8 +136,11 @@ input {
 }
 
 .col-right {
-    width: 30%;
+    width: 35%;
+    padding-left: 1rem;
+    border-left: 3px solid var(--bcg-secondary);
     display: none;
+
 }
 
 
@@ -148,6 +151,10 @@ input {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+
+    .big-logo {
+        display: none;
+    }
 
     img {
         padding-right: 0.5rem;
@@ -206,14 +213,20 @@ main {
     background-color: var(--bcg-primary);
 }
 
-.discover {
-    h2 {
+.col-left {
+    padding-top: 1.5rem;
+
+    h4 {
+        font-size: 0.9rem;
         color: white;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .tag {
         color: var(--searchbar-text);
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     img {
@@ -224,7 +237,7 @@ main {
         position: relative;
     }
 
-    .play-button {
+    .album-col .play-button {
         position: absolute;
         bottom: 1.5rem;
         left: 1rem;
@@ -241,9 +254,30 @@ main {
             display: block;
         }
 
-        img{
-            border: none;
+        img {
+            border: 2px solid var(--bcg-primary);
         }
     }
 
+}
+
+.col-right {
+
+    img {
+        margin-bottom: 3rem;
+    }
+
+    .current-album {
+        align-items: flex-start;
+
+        h5{
+            font-size: 1.1rem;
+        }
+    }
+
+    .current-playing {
+        font-size: 2.4rem;
+        color: black;
+        background-color: white;
+    }
 }
