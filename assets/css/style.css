@@ -113,6 +113,9 @@ input {
     padding: 0.8rem;
 }
 
+/*Scrollbar*/
+
+
 /*Flex*/
 
 .d-flex {
@@ -230,17 +233,18 @@ input {
 
 /*Main*/
 
+/*Main bcg*/
+
 main {
     background-color: var(--bcg-primary);
 }
 
-.discover {
-    align-items: flex-start;
-}
+/*Scrollbar*/
 
 .row {
     height: 800px;
     overflow-y: scroll;
+    scrollbar-color: var(--bcg-secondary) var(--bcg-primary) ;
 }
 
 /*Albums grid*/
