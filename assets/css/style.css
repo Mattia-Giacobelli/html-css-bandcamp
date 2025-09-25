@@ -111,16 +111,11 @@ input {
     color: var(--searchbar-text);
 }
 
-.discover {
-
-    h2{
-        color: white;
-    }
-
-    span{
-        color: var(--searchbar-text);
-        font-size: 1.3rem;
-    }
+.play-button {
+    color: white;
+    background-color: var(--bcg-primary);
+    border-radius: 50%;
+    padding: 0.8rem;
 }
 
 /*Grid Utilities*/
@@ -167,12 +162,21 @@ input {
     }
 
     ul {
-        gap: 1rem;
+        gap: rem;
+
+        a {
+            padding: 0.5rem;
+        }
     }
 
-    .discover {
+    .search {
         padding: 0.3rem 2rem;
         font-family: FontAwesome;
+    }
+
+    a:hover {
+        background-color: var(--bcg-secondary);
+        text-decoration: underline;
     }
 }
 
@@ -186,7 +190,7 @@ input {
             top: 4px;
         }
 
-        .discover {
+        .search {
             width: 100%;
             padding: 0.4rem;
             border: 1px solid var(--searchbar-text);
@@ -203,5 +207,43 @@ main {
 }
 
 .discover {
+    h2 {
+        color: white;
+    }
+
+    .tag {
+        color: var(--searchbar-text);
+        font-size: 1.3rem;
+    }
+
+    img {
+        border: 2px solid var(--bcg-secondary);
+    }
+
+    .album-col div {
+        position: relative;
+    }
+
+    .play-button {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1rem;
+        display: none;
+
+        &:hover {
+            background-color: var(--bcg-secondary);
+        }
+    }
+
+    .album-col:hover {
+
+        .play-button {
+            display: block;
+        }
+
+        img{
+            border: none;
+        }
+    }
 
 }
