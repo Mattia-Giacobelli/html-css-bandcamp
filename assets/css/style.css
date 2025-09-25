@@ -268,6 +268,14 @@ main {
 
     .album-col div {
         position: relative;
+
+        &:hover {
+            opacity: 0.7;
+
+            img{
+                border: 10px solid var(--bcg-primary);
+            }
+        }
     }
 
     .album-col .play-button {
