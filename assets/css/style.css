@@ -72,9 +72,12 @@ img {
 
 /*Utilities*/
 
+/*Flex*/
+
 .d-flex {
     display: flex;
 }
+
 
 .container {
     width: 95%;
@@ -116,6 +119,22 @@ input {
     background-color: var(--bcg-primary);
     border-radius: 50%;
     padding: 0.8rem;
+}
+
+/*Buttons*/
+
+.btn {
+    border: 2px solid white;
+    color: var(--searchbar);
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+}
+
+.reverse {
+    background-color: var(--bcg-primary);
+    color: white;
 }
 
 /*Grid Utilities*/
@@ -213,13 +232,22 @@ main {
     background-color: var(--bcg-primary);
 }
 
+.discover {
+    align-items: flex-start;
+}
+
+.row{
+    height: 800px;
+    overflow-y: scroll;
+}
+
 .col-left {
     padding-top: 1.5rem;
 
     h4 {
         font-size: 0.9rem;
         color: white;
-        display: block;
+        overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
@@ -262,16 +290,22 @@ main {
 }
 
 .col-right {
+    color: white;
 
-    img {
+    .img-margin {
         margin-bottom: 3rem;
     }
 
     .current-album {
         align-items: flex-start;
+        padding-bottom: 1.5rem;
 
-        h5{
-            font-size: 1.1rem;
+        h5 {
+            font-size: 1rem;
+            padding-left: 0.8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 
@@ -279,5 +313,36 @@ main {
         font-size: 2.4rem;
         color: black;
         background-color: white;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .release {
+        margin: 1rem 0.25rem;
+        display: block;
+    }
+
+    .artist {
+        align-items: center;
+
+        img{
+            border-radius: 50%;
+        }
+
+        .artist-pf {
+            width: 20%;
+            padding-right: 0.5rem;
+        }
+    }
+
+    .follow {
+        flex-direction: column;
+
+        .flw-btn{
+            margin-top: 1rem;
+        }
     }
 }
