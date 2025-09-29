@@ -229,13 +229,46 @@
 
             <div class="col-right">
 
-                <img class="img-album" src="./assets/img/a2734007037_5.jpg" alt="Liminality">
+                <input class="img-album" type="image" src="./assets/img/a2734007037_5.jpg" popovertarget="album-popover"
+                    popovertargetaction="show">
+
+                <div id="album-popover" popover>
+                    <div class="d-flex">
+                        <div class="album-pop-img">
+                            <div class="margin-n">
+                                <button class="pop-close" popovertarget="album-popover" popovertargetaction="hide">
+                                    <i class="fa-regular fa-circle-xmark"></i>
+                                </button>
+                                <img src="./assets/img/a2734007037_5.jpg" alt="Liminality">
+                            </div>
+
+                            <div class="album-info d-flex">
+                                <div>
+                                    <a href="" class="album-ref">
+                                        Liminality / Drearn State Return <br>
+                                    </a>
+                                    <span>
+                                        by Elder <br>
+                                        <strong>$5</strong>
+                                        USD or more
+                                    </span>
+                                </div>
+
+                                <button>
+                                    Buy Album
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
 
                 <div class="d-flex current-album">
                     <span class="play-button current-playing"><i class="fa-solid fa-play"></i></span>
                     <h5 class="album-name">
                         Liminality <br>
-                        <a  href="#" class="go-to-album">
+                        <a href="#" class="go-to-album">
                             from Liminality / Dream State Return <br>
                         </a>
                         by Elder
