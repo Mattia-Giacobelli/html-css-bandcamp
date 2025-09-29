@@ -219,6 +219,7 @@ input {
     }
 
     .search {
+        width: 100%;
         padding: 0.3rem 2rem;
         font-family: FontAwesome;
     }
@@ -337,7 +338,7 @@ main {
     .img-album {
         margin-bottom: 3rem;
         border: 2px solid var(--bcg-secondary);
-        width: 50%;
+        width: 80%;
     }
 
     #album-popover {

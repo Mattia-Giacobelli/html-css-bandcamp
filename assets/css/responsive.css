@@ -21,14 +21,24 @@
         }
 
         .searchbar {
+            width: 348px;
             display: inline;
+
+            .search-text{
+                width: 100%;
+            }
+
+            .search{
+                width: 110%;
+            }
         }
+
     }
  
     .genre{
 
         .search{
-            width: 70%;
+            width: 499px;
         }
     }
 
@@ -68,6 +78,13 @@
 
             .tag {
                 font-size: 1.3rem;
+            }
+        }
+
+        .col-right{
+
+            .img-album{
+                width: 50%;
             }
         }
     }
